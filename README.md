@@ -8,4 +8,4 @@ Enter the settings menu -> plugin manager -> Get more -> ... from url
 
 and enter this URL:
 
-    https://github.com/ntoff/OctoPrint-DarkTheme/archive/master.zip
+    https://github.com/ntoff/OctoPrint-CyborgTheme/archive/master.zip

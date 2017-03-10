@@ -1,41 +1,103 @@
+/*fix for settings menu being half off the screen, not sure if dodgy fix -_- */
 .modal.fade.in {
-    top: 50%;
+	top: 50%;
 }
+
+/*icon colour in the accordian menus (connection, state, files, etc)*/
 .octoprint-container .accordion-heading [class*=" icon-"], .octoprint-container .accordion-heading [class^=icon-] {
-    color: #ccc;
+	color: #ccc;
 }
+
+/*
 .btn-group > .btn-mini {
     font-size: 14px;
-}
+}*/
 button.close {
 	color: #f00;
 	text-shadow: 0 1px 0 #555;
 	opacity: 0.7;
-    padding: 0;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    -webkit-appearance: none;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
 }
 [class^="icon-"], [class*=" icon-"] {
-    display: inline;
-    width: auto;
-    height: auto;
-    line-height: normal;
-    vertical-align: baseline;
-    background-image: none;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    margin-top: 0;
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: baseline;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	margin-top: 0;
 }
-input,
-button,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*timelapse trash icon*/
+table td.timelapse_files_action a.icon-trash, table td.timelapse_unrendered_action a.icon-trash, table th.timelapse_files_action a.icon-trash, table th.timelapse_unrendered_action a.icon-trash {
+	color: #f00;
 }
+
+/*render and download icon*/
+table td.timelapse_files_action a, table td.timelapse_unrendered_action a, table th.timelapse_files_action a, table th.timelapse_unrendered_action a, table td.settings_logs_action a, table th.settings_logs_action a {
+	color: #02cc00;
+}
+
+/*settings pages trash icon enabled*/
+table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash, table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash, table td.settings_logs_action a.icon-trash, table th.settings_logs_action a.icon-trash {
+	color: #f00;
+}
+
+/*settings pages trash icon disabled*/
+table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled, table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled {
+	color: #000;
+	cursor: not-allowed;
+}
+
+/*settings pages circle icon enabled*/
+table th.settings_plugin_plugin_manager_plugins_actions a, table td.settings_plugin_plugin_manager_plugins_actions a, table td.settings_plugin_announcements_channels_actions a, table th.settings_plugin_announcements_channels_actions a {
+	color: #fff;
+}
+
+/*settings pages circle icon disabled*/
+table td.settings_plugin_announcements_channels_actions a.disabled, table th.settings_plugin_announcements_channels_actions a.disabled {
+	color: #000;
+	cursor: not-allowed;
+}
+
+/*general table hover colour*/
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	background-color: #000;
+	color: #ddd;
+}
+/*gcode "files" hover colour*/
+#files .gcode_files .entry:hover {
+	background-color: #000;
+	color: #ddd;
+}
+/*pagination buttons*/
+.pagination ul > .active > a, .pagination ul > .active > span {
+	color: #000000;
+}
+
+/*fix for weirdness with active tab being selected*/
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+	color: #ffffff;
+	background-color: #33b5e5;
+}
+
+/*headings in the tab sections (not actual tab names)*/
+.octoprint-container .tab-content h1 {
+	color: #adafae;
+}
+
+/*obvious general stuff, fonts, font sizes*/
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+input, button, select, textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

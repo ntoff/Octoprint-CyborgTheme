@@ -86,6 +86,11 @@ table td.settings_plugin_announcements_channels_actions a.disabled, table th.set
 	color: #adafae;
 }
 
+/*Border around active tab + top of tab cluster*/
+.tabbable .nav-tabs, .tabbable .nav-tabs li.active > a {
+    border-color: #ddd;
+}
+
 /*fix for temperature dropdowns causing scroll*/
 .tab-content {
     overflow: visible;

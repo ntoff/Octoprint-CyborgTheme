@@ -88,6 +88,11 @@ table td.settings_plugin_announcements_channels_actions a.disabled, table th.set
 .octoprint-container .tab-content h1 {
 	color: #adafae;
 }
+
+/*fix for temperature dropdowns causing scroll*/
+.tab-content {
+    overflow: visible;
+}
 /*fix for navbar being weird in a browser window sized smaller than the total page width*/
 .navbar {
     min-width: 960px;

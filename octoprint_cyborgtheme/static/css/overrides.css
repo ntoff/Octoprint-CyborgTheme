@@ -5,21 +5,56 @@
 	color: #ccc;
 }
 
+/*the "Files" spanner menu dropdown*/
+.octoprint-container .accordion-heading .accordion-heading-button a {
+    color: #e0e0e0;
+}
+
+/*the "Files" spanner menu dropdown highlight colour*/
+.octoprint-container .accordion-heading .accordion-heading-button a:hover {
+    color: #fff;
+    background-color: #2ab2e4;
+}
+
+/*other drop down menus like the tab overflow menu*/
+.dropdown-menu > li > a {
+    color: #e0e0e0;
+}
+
+.dropdown-submenu > a:after {
+    border-left-color: #e0e0e0;
+}
+
+/*close button*/
 .close, .close:hover {
 	color: #f00;
 	text-shadow: 0 1px 0 #555;
 	opacity: 0.7;
 }
+
+/*icons*/
 [class^="icon-"], [class*=" icon-"] {
-	display: inline;
-	width: auto;
-	height: auto;
-	line-height: normal;
-	vertical-align: baseline;
 	background-image: none;
-	background-position: 0% 0%;
-	background-repeat: repeat;
-	margin-top: 0;
+}
+/*more icons, these are both needed to stop some weird double icon behaviour*/
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+  background-image: none;
 }
 
 /*timelapse trash icon*/

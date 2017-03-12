@@ -175,11 +175,11 @@ table th.settings_plugin_announcements_channels_actions a.disabled {
 	float: left;
 	margin: 0 10px 0 0;
 	margin-top: 0px;
-	margin-right: 10px;
+	margin-right: 5px;
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
-
+/*fix navbar text being too spaced out*/
 .navbar .navbar-text {
 	padding: 15px 0px 0px;
 }

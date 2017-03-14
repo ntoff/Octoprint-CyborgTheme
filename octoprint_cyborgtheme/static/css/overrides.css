@@ -42,6 +42,7 @@
     background-repeat: repeat-x;
     border: 1px solid #bd362f;
 }
+/*print cancel button disabled*/
 #job_cancel.btn.disabled, #job_cancel.btn[disabled], #job_cancel.btn:hover[disabled] {
 	color: #fff;
 	opacity: 0.65;
@@ -50,31 +51,22 @@
     background-image: none;
 }
 
-/*icons*/
-[class^="icon-"],
-[class*=" icon-"] {
-	background-image: none;
-}
-
-/*more icons, these are both needed to stop some weird double icon behaviour*/
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:focus > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > li > a:focus > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:focus > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:focus > a > [class*=" icon-"] {
-	background-image: none;
+/*icon fixes*/
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
 }
 
 /*timelapse trash icon*/
@@ -204,16 +196,34 @@ table th.settings_plugin_announcements_channels_actions a.disabled {
 .nav-tabs li > a:hover, .nav-tabs li.active > a, .nav-tabs li.active > a:hover {
     border-color: #fff;
 }
+
+/*fix plugin archive upload button being too large*/
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
 /*obvious general stuff, fonts, font sizes*/
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 }
-
 input,
 button,
 select,
 textarea {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*fix plugin archive upload button height*/
+select, input[type="file"] {
+    height: 20px;
 }

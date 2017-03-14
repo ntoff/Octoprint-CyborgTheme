@@ -34,6 +34,22 @@
 	opacity: 0.7;
 }
 
+/*print cancel button*/
+#job_cancel, #job_cancel:hover, #job_cancel:focus, #job_cancel:active {
+	color: #fff;
+	background-color: #bd362f;
+    background-image: linear-gradient(to bottom,#ee5f5b,#bd362f);
+    background-repeat: repeat-x;
+    border: 1px solid #bd362f;
+}
+#job_cancel.btn.disabled, #job_cancel.btn[disabled], #job_cancel.btn:hover[disabled] {
+	color: #fff;
+	opacity: 0.65;
+	background-color: #5c5c5c;
+	border: 1px solid #5c5c5c;
+    background-image: none;
+}
+
 /*icons*/
 [class^="icon-"],
 [class*=" icon-"] {

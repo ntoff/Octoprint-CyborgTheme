@@ -184,6 +184,10 @@ table th.settings_plugin_announcements_channels_actions a.disabled {
 	padding: 15px 0px 0px;
 }
 
+/*highlighted tabs border colour*/
+.nav-tabs li > a:hover, .nav-tabs li.active > a, .nav-tabs li.active > a:hover {
+    border-color: #fff;
+}
 /*obvious general stuff, fonts, font sizes*/
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

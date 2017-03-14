@@ -224,6 +224,6 @@ textarea {
 }
 
 /*fix plugin archive upload button height*/
-select, input[type="file"] {
+input[type="file"] {
     height: 20px;
 }

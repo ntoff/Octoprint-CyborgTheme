@@ -240,6 +240,27 @@ textarea {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*input too hard to read fix*/
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #444 !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #444 !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #444 !important;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+    color: #222;
+    text-shadow: 0 1px 0 #d4d4d4;
+}
+
 /*fix plugin archive upload button height*/
 input[type="file"] {
     height: 20px;

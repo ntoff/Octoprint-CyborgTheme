@@ -143,6 +143,34 @@ table th.settings_plugin_announcements_channels_actions a.disabled {
 	cursor: not-allowed;
 }
 
+/*printer profile icons*/
+/*gold star*/
+table td.settings_printerProfiles_profiles_action a.icon-star, table th.settings_printerProfiles_profiles_action a.icon-star {
+	color: #ffbe00;
+}
+/*pencil*/
+table td.settings_printerProfiles_profiles_action a.icon-pencil, table th.settings_printerProfiles_profiles_action a.icon-pencil {
+	color: #00abff;
+}
+/*trash*/
+table td.settings_printerProfiles_profiles_action a.icon-trash, table th.settings_printerProfiles_profiles_action a.icon-trash {
+	color: #f00;
+}
+
+/*user manager*/
+/*update*/
+table td.settings_users_actions a.icon-pencil, table th.settings_users_actions a.icon-pencil {
+    color: #00abff;
+}
+/*change password*/
+table td.settings_users_actions a.icon-key, table th.settings_users_actions a.icon-key {
+    color: #0cdc00;
+}
+/*delete*/
+table td.settings_users_actions a.icon-trash, table th.settings_users_actions a.icon-trash {
+    color: #f00;
+}
+
 /*general table hover colour*/
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {

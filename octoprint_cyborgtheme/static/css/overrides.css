@@ -171,6 +171,14 @@ table td.settings_users_actions a.icon-trash, table th.settings_users_actions a.
     color: #f00;
 }
 
+/*sd icon fix*/
+.icon-sd-black-14 {
+    background: url(../img/icon-sd-light-14.png) 0 3px no-repeat;
+    width: 11px;
+    height: 17px;
+    display: inline-block!important;
+}
+
 /*general table hover colour*/
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {

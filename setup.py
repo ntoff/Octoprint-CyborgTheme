@@ -1,62 +1,36 @@
 # coding=utf-8
 
-########################################################################################################################
-### Do not forget to adjust the following variables to your own plugin.
 
-# The plugin's identifier, has to be unique
 plugin_identifier = "cyborgtheme"
 
-# The plugin's python package, should be "octoprint_<plugin identifier>", has to be unique
 plugin_package = "octoprint_cyborgtheme"
 
-# The plugin's human readable name. Can be overwritten within OctoPrint's internal data via __plugin_name__ in the
-# plugin module
 plugin_name = "OctoPrint-CyborgTheme"
 
-# The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "0.1.0"
+plugin_version = "0.1.1"
 
-# The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
-# module
-plugin_description = """Bootstrap Cyborg theme for octoprint: https://bootswatch.com/2/cyborg/"""
+plugin_description = """Bootstrap Cyborg theme ( https://bootswatch.com/2/cyborg/ ) adapted for octoprint."""
 
-# The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
 plugin_author = "ntoff"
 
-# The plugin's author's mail address.
 plugin_author_email = ""
 
-# The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
 plugin_url = "https://github.com/ntoff/OctoPrint-CyborgTheme"
 
-# The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
 
-# Any additional requirements besides OctoPrint should be listed here
 plugin_requires = []
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point
 ### --------------------------------------------------------------------------------------------------------------------
 
-# Additional package data to install for this plugin. The subfolders "templates", "static" and "translations" will
-# already be installed automatically if they exist.
 plugin_additional_data = []
 
-# Any additional python packages you need to install with your plugin that are not contained in <plugin_package>.*
 plugin_additional_packages = []
 
-# Any python packages within <plugin_package>.* you do NOT want to install with your plugin
 plugin_ignored_packages = []
 
-# Additional parameters for the call to setuptools.setup. If your plugin wants to register additional entry points,
-# define dependency links or other things like that, this is the place to go. Will be merged recursively with the
-# default setup parameters as provided by octoprint_setuptools.create_plugin_setup_parameters using
-# octoprint.util.dict_merge.
-#
-# Example:
-#     plugin_requires = ["someDependency==dev"]
-#     additional_setup_parameters = {"dependency_links": ["https://github.com/someUser/someRepo/archive/master.zip#egg=someDependency-dev"]}
 additional_setup_parameters = {}
 
 ########################################################################################################################

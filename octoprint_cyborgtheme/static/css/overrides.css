@@ -305,7 +305,7 @@ input[type="file"] {
 /*touchui fixes*/
 
 /*page headings*/
-#touch h3 {
+#touch h3, #touch h4 {
     color: black;
     font-weight: bold;
 }
@@ -320,4 +320,15 @@ input[type="file"] {
 /*previous navbar min width fix still works on regular browsers but caused touchui to have to scroll, this is my dirty workaround*/
 #touch .navbar {
 	min-width: 1px;
+}
+
+/*settings pages drop down list*/
+#touch .nav-list li > a:hover {
+	color: #fff;
+	background-color: #000000;
+}
+
+/*terminal page filter labels*/
+#touch #terminal-filterpanel label {
+	color: #ddd;
 }

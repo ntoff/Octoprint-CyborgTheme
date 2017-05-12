@@ -26,6 +26,12 @@
 	border-left-color: #e0e0e0;
 }
 
+/*timelapse file sorting dropdown*/
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
 /*close button*/
 .close,
 .close:hover {

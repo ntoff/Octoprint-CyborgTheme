@@ -301,3 +301,34 @@ textarea::-webkit-input-placeholder {
 input[type="file"] {
     height: 20px;
 }
+
+/*touchui fixes*/
+
+/*page headings*/
+#touch h3, #touch h4 {
+    color: black;
+    font-weight: bold;
+}
+/*page text labels*/
+#touch legend, #touch label {
+    color: black;
+}
+/*help text*/
+#touch .help-block, #touch .help-inline {
+    color: #595959;
+}
+/*previous navbar min width fix still works on regular browsers but caused touchui to have to scroll, this is my dirty workaround*/
+#touch .navbar {
+	min-width: 1px;
+}
+
+/*settings pages drop down list*/
+#touch .nav-list li > a:hover {
+	color: #fff;
+	background-color: #000000;
+}
+
+/*terminal page filter labels*/
+#touch #terminal-filterpanel label {
+	color: #ddd;
+}

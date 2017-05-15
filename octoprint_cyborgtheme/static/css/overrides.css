@@ -26,6 +26,12 @@
 	border-left-color: #e0e0e0;
 }
 
+/*timelapse file sorting dropdown*/
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
 /*close button*/
 .close,
 .close:hover {
@@ -297,7 +303,48 @@ textarea::-webkit-input-placeholder {
     text-shadow: 0 1px 0 #d4d4d4;
 }
 
+/*Make progress bar easier to see*/
+.progress {
+    color: #eee;
+    background-color: #444;
+    background-image: linear-gradient(to bottom, #555, #333);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 /*fix plugin archive upload button height*/
 input[type="file"] {
     height: 20px;
+}
+
+/*touchui fixes*/
+
+/*page headings*/
+#touch h3, #touch h4 {
+    color: black;
+    font-weight: bold;
+}
+/*page text labels*/
+#touch legend, #touch label {
+    color: black;
+}
+/*help text*/
+#touch .help-block, #touch .help-inline {
+    color: #595959;
+}
+/*previous navbar min width fix still works on regular browsers but caused touchui to have to scroll, this is my dirty workaround*/
+#touch .navbar {
+	min-width: 1px;
+}
+
+/*settings pages drop down list*/
+#touch .nav-list li > a:hover {
+	color: #fff;
+	background-color: #000000;
+}
+
+/*terminal page filter labels*/
+#touch #terminal-filterpanel label {
+	color: #ddd;
 }

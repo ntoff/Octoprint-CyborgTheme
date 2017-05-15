@@ -303,6 +303,12 @@ textarea::-webkit-input-placeholder {
     text-shadow: 0 1px 0 #d4d4d4;
 }
 
+/*Make progress bar easier to see*/
+.progress {
+    color: #eee;
+    background-color: #444;
+}
+
 /*fix plugin archive upload button height*/
 input[type="file"] {
     height: 20px;

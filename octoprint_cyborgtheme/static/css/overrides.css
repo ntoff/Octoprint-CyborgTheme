@@ -307,6 +307,10 @@ textarea::-webkit-input-placeholder {
 .progress {
     color: #eee;
     background-color: #444;
+    background-image: linear-gradient(to bottom, #555, #333);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 /*fix plugin archive upload button height*/

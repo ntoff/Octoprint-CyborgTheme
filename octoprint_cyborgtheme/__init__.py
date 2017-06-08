@@ -7,7 +7,10 @@ class CyborgThemePlugin(octoprint.plugin.AssetPlugin):
 
 	def get_assets(self):
 		return dict(
-			css=["css/cyborg.css", "css/overrides-min.css", "css/bootstrap-modal.css"]
+			css=["css/cyborg.css",
+            "css/bootstrap-modal.css",
+            "css/overrides.css",
+            "css/overrides-icons.css"]
 	)
 	
 	def get_update_information(self):

@@ -1,11 +1,5 @@
 /*Overrides to the cyborg theme should go in here to avoid having to edit the main css file*/
 
-/*icon colour in the accordian menus (connection, state, files, etc)*/
-.octoprint-container .accordion-heading [class*=" icon-"],
-.octoprint-container .accordion-heading [class^=icon-] {
-	color: #ccc;
-}
-
 /*the "Files" spanner menu dropdown*/
 .octoprint-container .accordion-heading .accordion-heading-button a {
 	color: #e0e0e0;
@@ -57,134 +51,6 @@
     background-image: none;
 }
 
-/*icon fixes*/
-[class^="icon-"], [class*=" icon-"] {
-    display: inline;
-    width: auto;
-    height: auto;
-    line-height: normal;
-    vertical-align: baseline;
-    background-image: none;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    margin-top: 0;
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    -webkit-font-smoothing: antialiased;
-}
-
-/*icon hover fixes*/
-.icon-white,
-.nav-pills>.active>a>[class^="icon-"],
-.nav-pills>.active>a>[class*=" icon-"],
-.nav-list>.active>a>[class^="icon-"],
-.nav-list>.active>a>[class*=" icon-"],
-.navbar-inverse .nav>.active>a>[class^="icon-"],
-.navbar-inverse .nav>.active>a>[class*=" icon-"],
-.dropdown-menu>li>a:hover>[class^="icon-"],
-.dropdown-menu>li>a:hover>[class*=" icon-"],
-.dropdown-menu>.active>a>[class^="icon-"],
-.dropdown-menu>.active>a>[class*=" icon-"],
-.dropdown-submenu:hover>a>[class^="icon-"],
-.dropdown-submenu:hover>a>[class*=" icon-"] {
-	background-image: none;
-}
-
-/*timelapse trash icon*/
-table td.timelapse_files_action a.icon-trash,
-table td.timelapse_unrendered_action a.icon-trash,
-table th.timelapse_files_action a.icon-trash,
-table th.timelapse_unrendered_action a.icon-trash {
-	color: #f00;
-}
-
-/*timelapse trash icon disabled*/
-table td.timelapse_files_action a.icon-trash.disabled,
-table td.timelapse_unrendered_action a.icon-trash.disabled,
-table th.timelapse_files_action a.icon-trash.disabled,
-table th.timelapse_unrendered_action a.icon-trash.disabled {
-	color: #000;
-	cursor: not-allowed;
-}
-
-/*render and download icon*/
-table td.timelapse_files_action a,
-table td.timelapse_unrendered_action a,
-table th.timelapse_files_action a,
-table th.timelapse_unrendered_action a,
-table td.settings_logs_action a,
-table th.settings_logs_action a {
-	color: #02cc00;
-}
-
-/*settings pages trash icon enabled*/
-table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash,
-table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash,
-table td.settings_logs_action a.icon-trash,
-table th.settings_logs_action a.icon-trash {
-	color: #f00;
-}
-
-/*settings pages trash icon disabled*/
-table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled,
-table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled {
-	color: #000;
-	cursor: not-allowed;
-}
-
-/*settings pages circle icon enabled*/
-table th.settings_plugin_plugin_manager_plugins_actions a,
-table td.settings_plugin_plugin_manager_plugins_actions a,
-table td.settings_plugin_announcements_channels_actions a,
-table th.settings_plugin_announcements_channels_actions a {
-	color: #fff;
-}
-
-/*settings pages circle icon disabled*/
-table td.settings_plugin_announcements_channels_actions a.disabled,
-table th.settings_plugin_announcements_channels_actions a.disabled {
-	color: #000;
-	cursor: not-allowed;
-}
-
-/*printer profile icons*/
-/*gold star*/
-table td.settings_printerProfiles_profiles_action a.icon-star, table th.settings_printerProfiles_profiles_action a.icon-star {
-	color: #ffbe00;
-}
-/*pencil*/
-table td.settings_printerProfiles_profiles_action a.icon-pencil, table th.settings_printerProfiles_profiles_action a.icon-pencil {
-	color: #00abff;
-}
-/*trash*/
-table td.settings_printerProfiles_profiles_action a.icon-trash, table th.settings_printerProfiles_profiles_action a.icon-trash {
-	color: #f00;
-}
-
-/*user manager*/
-/*update*/
-table td.settings_users_actions a.icon-pencil, table th.settings_users_actions a.icon-pencil {
-    color: #00abff;
-}
-/*change password*/
-table td.settings_users_actions a.icon-key, table th.settings_users_actions a.icon-key {
-    color: #0cdc00;
-}
-/*delete*/
-table td.settings_users_actions a.icon-trash, table th.settings_users_actions a.icon-trash {
-    color: #f00;
-}
-
-/*sd icon fix*/
-.icon-sd-black-14 {
-    background: url(../img/icon-sd-light-14.png) 0 3px no-repeat;
-    width: 11px;
-    height: 17px;
-    display: inline-block!important;
-}
-
 /*general table hover colour*/
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
@@ -234,21 +100,28 @@ table td.settings_users_actions a.icon-trash, table th.settings_users_actions a.
 }
 
 /*fix navbar text being too spaced out*/
+.navbar-inner {
+    min-height: 40px;
+}
 .navbar .nav {
-	font-size: 13px;
+	/*font-size: 13px;*/
 	position: relative;
 	left: 0;
 	display: block;
 	float: left;
-	margin: 0 10px 0 0;
+	/*margin: 0 10px 0 0;*/
 	margin-top: 0px;
 	margin-right: 5px;
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
-/*fix navbar text being too spaced out*/
+
 .navbar .navbar-text {
-	padding: 15px 0px 0px;
+	padding: 10px 0px 10px;
+}
+
+.navbar .nav>li>a {
+    padding: 10px 15px 10px;
 }
 
 /*highlighted tabs border colour*/

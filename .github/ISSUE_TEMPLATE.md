@@ -12,7 +12,7 @@ Or it could simply be a case that I missed something, or was a little too broad 
 
 _"Can you add an override for plugin X"_
 
-I could, but I probably won't. I have to draw the line somewhere. I don't want this to end up as a hack job with overrides overriding overrides, and be forever chasing down issues with every new plugin that decides to override one of the standard css elements for no good reason.
+I could, but I probably won't. I have to draw the line somewhere. I don't want this to end up as a hack job with overrides overriding overrides, and be forever chasing down issues with every new plugin that decides to override one of the standard css elements for no good reason. That doesn't mean _you_ can't, got something you want overridden? Chuck  it in overrides-_plugin-name_.css, add it to the list of loaded assets in `__init.py__` and make a pull request! Just make sure your additions don't interfere with any existing ones.
 
 ##### Bug reports:
 

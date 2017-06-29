@@ -94,6 +94,13 @@
 	overflow: visible;
 }
 
+/*temperature graph background*/
+div#temperature-graph {
+    background-color: #a0a0a0;
+    border-radius: 5px;
+    padding: 3px !important;
+}
+
 /*fix for navbar being weird in a browser window sized smaller than the total page width*/
 .navbar {
 	min-width: 960px;

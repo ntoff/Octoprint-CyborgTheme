@@ -94,6 +94,13 @@
 	overflow: visible;
 }
 
+/*API key background fix*/
+#settings_dialog_content > .active canvas,
+#usersettings_access .controls > div > canvas {
+    padding: 10px;
+    background-color: white;
+}
+
 /*temperature graph background*/
 div#temperature-graph {
     background-color: #a0a0a0;
@@ -101,11 +108,8 @@ div#temperature-graph {
     padding: 3px !important;
 }
 
-.yAxis.y1Axis {
-    color: black !important;
-}
-
-.xAxis.x1Axis {
+/*temp graph legend text*/
+.yAxis.y1Axis, .xAxis.x1Axis {
     color: black !important;
 }
 

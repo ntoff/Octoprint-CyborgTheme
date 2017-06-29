@@ -101,6 +101,14 @@ div#temperature-graph {
     padding: 3px !important;
 }
 
+.yAxis.y1Axis {
+    color: black !important;
+}
+
+.xAxis.x1Axis {
+    color: black !important;
+}
+
 /*fix for navbar being weird in a browser window sized smaller than the total page width*/
 .navbar {
 	min-width: 960px;

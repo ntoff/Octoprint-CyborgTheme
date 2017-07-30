@@ -3,7 +3,7 @@
 /*Octoprint has moved to the new font awesome meaning icon- is obsolete and fa- is the new hotness*/
 /*icon- is still necessary for backwards compatibility though*/
 
-/*Sets the default colour to white*/
+/*Sets the default colour to white i'm 20000% sure doing this twice is redundant*/
 /*settings dialog*/
 .Cyborgified_Settings [class^="icon-"],
 .Cyborgified_Settings [class*=" icon-"],
@@ -18,32 +18,29 @@
 .OctoPrintTheme-Cyborg [class*=" fa-"] {
 	color: white;
 }
-
-
 /*icon colour in the accordian menus (connection, state, files, etc)*/
 .octoprint-container .accordion-heading [class*=" icon-"],
-.octoprint-container .accordion-heading [class^=icon-] {
+.octoprint-container .accordion-heading [class^=icon-],
+.octoprint-container .dropdown-toggle [class="icon-align-justify"] {
 	color: #ccc;
 }
-
 /*icon fixes*/
 [class^="icon-"], [class*=" icon-"] {
     display: inline;
-    width: auto;
-    height: auto;
+    /*width: auto;*/
+    /*height: auto;*/
     line-height: normal;
     vertical-align: baseline;
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat;
-    margin-top: 0;
+    /*margin-top: 0;*/
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
     text-decoration: inherit;
     -webkit-font-smoothing: antialiased;
 }
-
 /*icon hover fixes*/
 .icon-white,
 .nav-pills>.active>a>[class^="icon-"],
@@ -60,7 +57,6 @@
 .dropdown-submenu:hover>a>[class*=" icon-"] {
 	background-image: none;
 }
-
 /*settings pages circle icon enabled*/
 table th.settings_plugin_plugin_manager_plugins_actions a,
 table td.settings_plugin_plugin_manager_plugins_actions a,
@@ -68,57 +64,36 @@ table td.settings_plugin_announcements_channels_actions a,
 table th.settings_plugin_announcements_channels_actions a {
 	color: #fff;
 }
-
-/*gold*/
-table td.settings_printerProfiles_profiles_action a.icon-star, 
-table th.settings_printerProfiles_profiles_action a.icon-star,
-table td.settings_printerProfiles_profiles_name span.icon-star, 
-table th.settings_printerProfiles_profiles_name span.icon-star,
-table td.settings_users_actions a.icon-key, 
-table th.settings_users_actions a.icon-key,
-table td.timelapse_unrendered_action a,
-table th.timelapse_unrendered_action a {
+/*broad icon colour settings may cause weird issues, be careful*/
+/*golden thingies*/
+.OctoPrintTheme-Cyborg a[class^="icon-star"],
+.OctoPrintTheme-Cyborg a[class*=" icon-star"],
+.OctoPrintTheme-Cyborg a[class^="icon-key"],
+.OctoPrintTheme-Cyborg a[class*=" icon-key"],
+.OctoPrintTheme-Cyborg span[class^="icon-star"],
+.OctoPrintTheme-Cyborg span[class*=" icon-star"],
+.OctoPrintTheme-Cyborg a[class^="fa-star"],
+.OctoPrintTheme-Cyborg a[class*=" fa-star"],
+.OctoPrintTheme-Cyborg a[class^="fa-key"],
+.OctoPrintTheme-Cyborg a[class*=" fa-key"],
+.OctoPrintTheme-Cyborg span[class^="fa-star"],
+.OctoPrintTheme-Cyborg span[class*=" fa-star"] {
 	color: #ffbe00;
 }
-/*pencil*/
-table td.settings_printerProfiles_profiles_action a.icon-pencil, 
-table th.settings_printerProfiles_profiles_action a.icon-pencil,
-table td.settings_users_actions a.icon-pencil, 
-table th.settings_users_actions a.icon-pencil {
+/*"edit" icons, pencils, etc go here*/
+.OctoPrintTheme-Cyborg a[class^="icon-pencil"],
+.OctoPrintTheme-Cyborg a[class*=" icon-pencil"],
+.OctoPrintTheme-Cyborg a[class^="fa-pencil"],
+.OctoPrintTheme-Cyborg a[class*=" fa-pencil"] {
 	color: #00abff;
 }
-
-/*More general download icon colour setting (includes 1.3.5+ fa-)*/
-
+/*download icons*/
 .OctoPrintTheme-Cyborg a[class^="icon-download"],
 .OctoPrintTheme-Cyborg a[class*=" icon-download"],
 .OctoPrintTheme-Cyborg a[class^="fa-download"],
 .OctoPrintTheme-Cyborg a[class*=" fa-download"] {
 	color: #02cc00;
 }
-
-/*octoprint >= 1.3.5*/
-
-/*gold*/
-table td.settings_printerProfiles_profiles_action a.fa.fa-star, 
-table th.settings_printerProfiles_profiles_action a.fa.fa-star,
-table td.settings_printerProfiles_profiles_name span.fa.fa-star, 
-table th.settings_printerProfiles_profiles_name span.fa.fa-star,
-table td.settings_users_actions a.fa.fa-key,
-table th.settings_users_actions a.fa.fa-key,
-table td.timelapse_unrendered_action a.fa.fa-video-camera,
-table th.timelapse_unrendered_action a.fa.fa-video-camera {
-	color: #ffbe00;
-}
-
-/*pencil*/
-table td.settings_printerProfiles_profiles_action a.fa.fa-pencil, 
-table th.settings_printerProfiles_profiles_action a.fa.fa-pencil,
-table td.settings_users_actions a.fa.fa-pencil,
-table th.settings_users_actions a.fa.fa-pencil {
-	color: #00abff;
-}
-
 /*Trash icon*/
 .OctoPrintTheme-Cyborg a[class*=" icon-trash"],
 .OctoPrintTheme-Cyborg a[class*=" fa-trash"],
@@ -126,20 +101,17 @@ table th.settings_users_actions a.fa.fa-pencil {
 .OctoPrintTheme-Cyborg a[class^="fa-trash"] {
 	color: #f00;
 }
-
-/*disabled icons, I don't like using !important but it doesn't work otherwise :( */
+/*disabled stuff, I don't like using !important but it doesn't work otherwise :( */
 .OctoPrintTheme-Cyborg [class*=" disabled"],
 .OctoPrintTheme-Cyborg [class^="disabled"] {
 	color: #666 !important;
 	cursor: not-allowed !important;
 }
-
 /*sd icon fix*/
+/*dear diary, make an actual icon some day*/
 .icon-sd-black-14 {
     background: url(../img/icon-sd-light-14.png) 0 3px no-repeat!important;
     width: 11px;
     height: 17px;
     display: inline-block!important;
 }
-
-

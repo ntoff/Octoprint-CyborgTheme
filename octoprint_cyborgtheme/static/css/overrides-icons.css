@@ -83,6 +83,8 @@ table th.settings_plugin_announcements_channels_actions a {
 /*"edit" icons, pencils, etc go here*/
 .OctoPrintTheme-Cyborg a[class^="icon-pencil"],
 .OctoPrintTheme-Cyborg a[class*=" icon-pencil"],
+.OctoPrintTheme-Cyborg a[class^="icon-edit"],
+.OctoPrintTheme-Cyborg a[class*=" icon-edit"],
 .OctoPrintTheme-Cyborg a[class^="fa-pencil"],
 .OctoPrintTheme-Cyborg a[class*=" fa-pencil"] {
 	color: #00abff;

@@ -1,7 +1,7 @@
 /*icon overrides moved here*/
 
 /*Octoprint has moved to the new font awesome meaning icon- is obsolete and fa- is the new hotness*/
-/*icon- is still necessary for backwards compatibility*/
+/*icon- is still necessary for backwards compatibility though*/
 
 /*Sets the default colour to white*/
 /*settings dialog*/
@@ -18,6 +18,7 @@
 .OctoPrintTheme-Cyborg [class*=" fa-"] {
 	color: white;
 }
+
 
 /*icon colour in the accordian menus (connection, state, files, etc)*/
 .octoprint-container .accordion-heading [class*=" icon-"],
@@ -58,42 +59,6 @@
 .dropdown-submenu:hover>a>[class^="icon-"],
 .dropdown-submenu:hover>a>[class*=" icon-"] {
 	background-image: none;
-}
-
-/*Sets some specific icons*/
-/*trash icon*/
-table td.timelapse_files_action a.icon-trash,
-table td.timelapse_unrendered_action a.icon-trash,
-table th.timelapse_files_action a.icon-trash,
-table th.timelapse_unrendered_action a.icon-trash,
-table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash,
-table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash,
-table td.settings_logs_action a.icon-trash,
-table th.settings_logs_action a.icon-trash,
-table td.settings_printerProfiles_profiles_action a.icon-trash, 
-table th.settings_printerProfiles_profiles_action a.icon-trash,
-table td.settings_users_actions a.icon-trash, 
-table th.settings_users_actions a.icon-trash {
-	color: #f00;
-}
-
-/*icon disabled*/
-table td.timelapse_files_action a.icon-trash.disabled,
-table th.timelapse_files_action a.icon-trash.disabled,
-table td.timelapse_unrendered_action a.icon-trash.disabled,
-table th.timelapse_unrendered_action a.icon-trash.disabled,
-table td.timelapse_unrendered_action a.icon-facetime-video.disabled,
-table th.timelapse_unrendered_action a.icon-facetime-video.disabled,
-table th.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled,
-table td.settings_plugin_plugin_manager_plugins_actions a.icon-trash.disabled,
-table td.settings_plugin_announcements_channels_actions a.disabled,
-table th.settings_plugin_announcements_channels_actions a.disabled,
-table td.settings_printerProfiles_profiles_action a.icon-trash.disabled, 
-table th.settings_printerProfiles_profiles_action a.icon-trash.disabled,
-table td.settings_printerProfiles_profiles_action a.icon-star.disabled, 
-table th.settings_printerProfiles_profiles_action a.icon-star.disabled {
-	color: #666;
-	cursor: not-allowed;
 }
 
 /*settings pages circle icon enabled*/
@@ -159,41 +124,18 @@ table th.settings_users_actions a.fa.fa-pencil {
 	color: #00abff;
 }
 
-/*trash*/
-table td.settings_printerProfiles_profiles_action a.fa.fa-trash-o, 
-table th.settings_printerProfiles_profiles_action a.fa.fa-trash-o,
-table td.settings_users_actions a.fa.fa-trash-o,
-table th.settings_users_actions a.fa.fa-trash-o,
-table td.timelapse_files_action a.fa.fa-trash-o,
-table td.timelapse_unrendered_action a.fa.fa-trash-o,
-table th.timelapse_files_action a.fa.fa-trash-o,
-table th.timelapse_unrendered_action a.fa.fa-trash-o,
-table th.settings_plugin_plugin_manager_plugins_actions a.fa.fa-trash-o,
-table td.settings_plugin_plugin_manager_plugins_actions a.fa.fa-trash-o,
-table td.settings_logs_action a.fa.fa-trash-o,
-table th.settings_logs_action a.fa.fa-trash-o {
+/*Tab content (control, timelapse, terminal, etc)*/
+.OctoPrintTheme-Cyborg a[class*=" icon-trash"],
+.OctoPrintTheme-Cyborg  a[class*=" fa-trash"],
+.OctoPrintTheme-Cyborg a[class^="icon-trash"],
+.OctoPrintTheme-Cyborg  a[class^="fa-trash"] {
 	color: #f00;
 }
 
-/*disabled*/
-table td.settings_printerProfiles_profiles_action a.fa-star.disabled, 
-table th.settings_printerProfiles_profiles_action a.fa-star.disabled,
-table td.settings_users_actions a.fa.fa-key.disabled,
-table th.settings_users_actions a.fa.fa-key.disabled,
-table td.settings_printerProfiles_profiles_action a.fa.fa-trash-o.disabled, 
-table th.settings_printerProfiles_profiles_action a.fa.fa-trash-o.disabled,
-table td.settings_users_actions a.fa.fa-trash-o.disabled,
-table th.settings_users_actions a.fa.fa-trash-o.disabled,
-table td.timelapse_files_action a.fa.fa-trash-o.disabled,
-table td.timelapse_unrendered_action a.fa.fa-trash-o.disabled,
-table th.timelapse_files_action a.fa.fa-trash-o.disabled,
-table th.timelapse_unrendered_action a.fa.fa-trash-o.disabled,
-table th.settings_plugin_plugin_manager_plugins_actions a.fa.fa-trash-o.disabled,
-table td.settings_plugin_plugin_manager_plugins_actions a.fa.fa-trash-o.disabled,
-table td.timelapse_unrendered_action a.fa.fa-video-camera.disabled,
-table th.timelapse_unrendered_action a.fa.fa-video-camera.disabled {
-	color: #666;
-	cursor: not-allowed;
+.OctoPrintTheme-Cyborg [class*=" disabled"],
+.OctoPrintTheme-Cyborg [class^="disabled"] {
+	color: #666 !important;
+	cursor: not-allowed !important;
 }
 
 /*sd icon fix*/

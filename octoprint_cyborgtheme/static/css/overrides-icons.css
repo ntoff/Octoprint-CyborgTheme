@@ -132,10 +132,8 @@ table th.settings_users_actions a.icon-pencil {
 	color: #02cc00;
 }
 /*Tab content (control, timelapse, terminal, etc)*/
-.OctoPrintTheme-Cyborg .tab-content [class^="icon-download"],
-.OctoPrintTheme-Cyborg .tab-content [class*=" icon-download"],
-.OctoPrintTheme-Cyborg .tab-content [class^="fa-download"],
-.OctoPrintTheme-Cyborg .tab-content [class*=" fa-download"] {
+.OctoPrintTheme-Cyborg .tab-content a.icon-download,
+.OctoPrintTheme-Cyborg .tab-content a.fa.fa-download {
 	color: #02cc00;
 }
 

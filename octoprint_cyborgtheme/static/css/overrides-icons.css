@@ -3,12 +3,19 @@
 /*Octoprint has moved to the new font awesome meaning icon- is obsolete and fa- is the new hotness*/
 /*icon- is still necessary for backwards compatibility*/
 
-/*attempt to cover a wider range of icons, use with caution as this can have unforseen consequences*/
 /*Sets the default colour to white*/
+/*settings dialog*/
 .Cyborgified_Settings [class^="icon-"],
 .Cyborgified_Settings [class*=" icon-"],
 .Cyborgified_Settings [class^="fa-"],
 .Cyborgified_Settings [class*=" fa-"] {
+	color: white;
+}
+/*main body*/
+.OctoPrintTheme-Cyborg [class^="icon-"],
+.OctoPrintTheme-Cyborg [class*=" icon-"],
+.OctoPrintTheme-Cyborg [class^="fa-"],
+.OctoPrintTheme-Cyborg [class*=" fa-"] {
 	color: white;
 }
 
@@ -53,6 +60,7 @@
 	background-image: none;
 }
 
+/*Sets some specific icons*/
 /*trash icon*/
 table td.timelapse_files_action a.icon-trash,
 table td.timelapse_unrendered_action a.icon-trash,
@@ -88,14 +96,6 @@ table th.settings_printerProfiles_profiles_action a.icon-star.disabled {
 	cursor: not-allowed;
 }
 
-/*download icon
-table td.timelapse_files_action a.icon-download,
-table th.timelapse_files_action a.icon-download,
-table td.settings_logs_action a.icon-download,
-table th.settings_logs_action a.icon-download {
-	color: #02cc00;
-}*/
-
 /*settings pages circle icon enabled*/
 table th.settings_plugin_plugin_manager_plugins_actions a,
 table td.settings_plugin_plugin_manager_plugins_actions a,
@@ -124,22 +124,22 @@ table th.settings_users_actions a.icon-pencil {
 }
 
 /*More general download icon colour setting (includes 1.3.5+ fa-)*/
+/*Settings pages*/
 .Cyborgified_Settings [class^="icon-download"],
 .Cyborgified_Settings [class*=" icon-download"],
 .Cyborgified_Settings [class^="fa-download"],
 .Cyborgified_Settings [class*=" fa-download"] {
 	color: #02cc00;
 }
+/*Tab content (control, timelapse, terminal, etc)*/
+.OctoPrintTheme-Cyborg .tab-content [class^="icon-download"],
+.OctoPrintTheme-Cyborg .tab-content [class*=" icon-download"],
+.OctoPrintTheme-Cyborg .tab-content [class^="fa-download"],
+.OctoPrintTheme-Cyborg .tab-content [class*=" fa-download"] {
+	color: #02cc00;
+}
 
 /*octoprint >= 1.3.5*/
-
-/*download icon
-table td.timelapse_files_action a.fa.fa-download,
-table th.timelapse_files_action a.fa.fa-download,
-table td.settings_logs_action a.fa.fa-download,
-table th.settings_logs_action a.fa.fa-download {
-	color: #02cc00;
-}*/
 
 /*gold*/
 table td.settings_printerProfiles_profiles_action a.fa.fa-star, 

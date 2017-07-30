@@ -20,11 +20,6 @@
 	border-left-color: #e0e0e0;
 }
 
-/*timelapse file sorting dropdown*/
-.dropdown-menu-right {
-    right: 0;
-    left: auto;
-}
 
 /*close button*/
 .close,
@@ -89,10 +84,6 @@
 	border-color: #ddd;
 }
 
-/*fix for temperature dropdowns causing scroll*/
-.tab-content {
-	overflow: visible;
-}
 
 /*API key background fix*/
 #settings_dialog_content > .active canvas,
@@ -113,65 +104,9 @@ div#temperature-graph {
     color: black !important;
 }
 
-/*fix for navbar being weird in a browser window sized smaller than the total page width*/
-.navbar {
-	min-width: 960px;
-}
-
-/*fix navbar text being too spaced out*/
-.navbar-inner {
-    min-height: 40px;
-}
-.navbar .nav {
-	/*font-size: 13px;*/
-	position: relative;
-	left: 0;
-	display: block;
-	float: left;
-	/*margin: 0 10px 0 0;*/
-	margin-top: 0px;
-	margin-right: 5px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-
-.navbar .navbar-text {
-	padding: 10px 0px 10px;
-}
-
-.navbar .nav>li>a {
-    padding: 10px 15px 10px;
-}
-
 /*highlighted tabs border colour*/
 .nav-tabs li > a:hover, .nav-tabs li.active > a, .nav-tabs li.active > a:hover {
     border-color: #fff;
-}
-
-/*fix plugin archive upload button being too large*/
-.fileinput-button input {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    transform: translate(-300px, 0) scale(4);
-    font-size: 23px;
-    direction: ltr;
-    cursor: pointer;
-}
-/*obvious general stuff, fonts, font sizes*/
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 20px;
-}
-input,
-button,
-select,
-textarea {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*input too hard to read fix*/
@@ -193,6 +128,12 @@ textarea::-webkit-input-placeholder {
 .input-append .add-on, .input-prepend .add-on {
     color: #222;
     text-shadow: 0 1px 0 #d4d4d4;
+}
+/*the gcode send button*/
+#terminal-send {
+    color: #eee;
+    text-shadow: 0 1px 0 #5d5d5d;
+    border: 1px solid #565656;
 }
 
 /*Make progress bar easier to see*/

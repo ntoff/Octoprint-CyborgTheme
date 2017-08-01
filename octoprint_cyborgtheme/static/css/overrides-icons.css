@@ -11,13 +11,13 @@
 .Cyborgified_Settings [class*=" fa-"] {
 	color: white;
 }
-/*main body*/
+/*main body
 .OctoPrintTheme-Cyborg [class^="icon-"],
 .OctoPrintTheme-Cyborg [class*=" icon-"],
 .OctoPrintTheme-Cyborg [class^="fa-"],
 .OctoPrintTheme-Cyborg [class*=" fa-"] {
 	color: white;
-}
+}*/
 /*icon colour in the accordian menus (connection, state, files, etc)*/
 .octoprint-container .accordion-heading [class*=" icon-"],
 .octoprint-container .accordion-heading [class^=icon-],

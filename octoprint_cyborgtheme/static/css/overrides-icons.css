@@ -20,9 +20,12 @@
 }*/
 /*icon colour in the accordian menus (connection, state, files, etc)*/
 .octoprint-container .accordion-heading [class*=" icon-"],
-.octoprint-container .accordion-heading [class^=icon-],
-.octoprint-container .dropdown-toggle [class="icon-align-justify"] {
+.octoprint-container .accordion-heading [class^=icon-] {
 	color: #ccc;
+}
+/*the caret thing on the tab overflow dropdown when active*/
+.octoprint-container .nav>.dropdown.active>.dropdown-toggle>.caret  {
+    border-top-color: white;
 }
 /*icon fixes*/
 [class^="icon-"], [class*=" icon-"] {

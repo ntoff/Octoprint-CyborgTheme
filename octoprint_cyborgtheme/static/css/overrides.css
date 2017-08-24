@@ -181,3 +181,9 @@ input[type="file"] {
 #touch #terminal-filterpanel label {
 	color: #ddd;
 }
+
+/*fix for multiple item select boxes being hard to read*/
+select[multiple] {
+    background-color: inherit;
+    color: inherit;
+}

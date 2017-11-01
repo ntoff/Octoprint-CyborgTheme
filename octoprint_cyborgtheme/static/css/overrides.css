@@ -187,3 +187,8 @@ select[multiple] {
     background-color: inherit;
     color: inherit;
 }
+
+/*Alert notify popup URL colour readability fix */
+.ui-pnotify .alert-danger a, .ui-pnotify .alert-error a {
+    color: #fff020;
+}

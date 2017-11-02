@@ -192,3 +192,7 @@ select[multiple] {
 .ui-pnotify .alert-danger a, .ui-pnotify .alert-error a {
     color: #fff020;
 }
+
+.ui-pnotify .alert-info a {
+    color: #c09853;
+}

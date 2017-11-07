@@ -196,3 +196,7 @@ select[multiple] {
 .ui-pnotify .alert-info a {
     color: #c09853;
 }
+
+.ui-pnotify .alert-success a {
+    color: #79ff92;
+}

@@ -7,7 +7,7 @@ plugin_package = "octoprint_cyborgtheme"
 
 plugin_name = "OctoPrint-CyborgTheme"
 
-plugin_version = "0.1.4"
+plugin_version = "0.1.5"
 
 plugin_description = """Bootstrap Cyborg theme ( https://bootswatch.com/2/cyborg/ ) adapted for octoprint."""
 

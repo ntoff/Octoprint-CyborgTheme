@@ -11,6 +11,7 @@ class CyborgThemePlugin(octoprint.plugin.AssetPlugin):
 			"css/bootstrap-modal.css",
 			"css/overrides.css",
 			"css/overrides-icons.css"],
+			less=["less/cyborg.less"],
 			 js=["js/octoprint-cyborgtheme.js"]
 	)
 

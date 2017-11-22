@@ -7,3 +7,5 @@ dist
 *.egg*
 .DS_Store
 *.zip
+octoprint_cyborgtheme/static/less/cyborg_orig.less
+octoprint_cyborgtheme/static/img/icon-sd-light-14.xcf

@@ -649,3 +649,16 @@
 .Cyborg .timelapse_unrendered_action [class^="fa-video-camera"] {
   color: #33B5E5;
 }
+.Cyborg #term .terminal #terminal-output,
+.Cyborg #term .terminal #terminal-output-lowfi {
+  background-color: #060606;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#131313), to(#060606));
+  background-image: -webkit-radial-gradient(circle, #131313, #060606);
+  background-image: -moz-radial-gradient(circle, #131313, #060606);
+  background-image: -o-radial-gradient(circle, #131313, #060606);
+  background-repeat: no-repeat;
+  color: #ccc;
+}
+.Cyborg .flot-text {
+  color: #ccc !important;
+}

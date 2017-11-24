@@ -273,6 +273,11 @@
 		}
 	}
 
+	.btn-group>.btn.active {
+		z-index: 3;
+		.buttonBackground(darken(@gray, 30%), darken(@gray, 40%));
+	}
+
 	#job_cancel, #job_cancel:hover, #job_cancel:focus, #job_cancel:active {
 		color: @almostNotWhite;
 		background-color: #bd362f;

@@ -2,7 +2,7 @@
 @import "cyborg_variables.less";
 
 .Cyborg {
-	
+
 	body {
 		min-height: 100%;
 		color: @gray;
@@ -55,7 +55,7 @@
 		text-shadow: 0 1px 0 #555;
 		opacity: 1;
 	}
-
+	
 	.nav-tabs {
 		& >.active > a {
 			color: #ffffff;
@@ -405,4 +405,12 @@
 			color: @blue;
 		}
 	}	
+
+	#term .terminal #terminal-output, #term .terminal #terminal-output-lowfi {
+		#gradient > .radial(lighten(@bodyBackground, 5%), @bodyBackground);
+		color: @almostNotWhite;
+		}
+	.flot-text {
+		color: @almostNotWhite !important;
+	}
 }

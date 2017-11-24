@@ -54,13 +54,22 @@
 .Cyborg h6 {
   color: #999;
 }
-.Cyborg .modal,
+.Cyborg .modal {
+  color: #999;
+  background-color: #060606;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#202020), to(#060606));
+  background-image: -webkit-radial-gradient(circle, #202020, #060606);
+  background-image: -moz-radial-gradient(circle, #202020, #060606);
+  background-image: -o-radial-gradient(circle, #202020, #060606);
+  background-repeat: no-repeat;
+}
 .Cyborg .modal-footer {
   color: #999;
   background-color: #131517;
 }
 .Cyborg .modal-header {
-  color: #0099CC;
+  color: #999;
+  background-color: #131517;
 }
 .Cyborg .hero-unit {
   font-size: 18px;
@@ -75,48 +84,10 @@
 }
 .Cyborg .close,
 .Cyborg .close:hover {
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #eb0000;
-  background-image: -moz-linear-gradient(top, #ff0000, #CC0000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff0000), to(#CC0000));
-  background-image: -webkit-linear-gradient(top, #ff0000, #CC0000);
-  background-image: -o-linear-gradient(top, #ff0000, #CC0000);
-  background-image: linear-gradient(to bottom, #ff0000, #CC0000);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff0000', endColorstr='#ffcc0000', GradientType=0);
-  border-color: #CC0000 #CC0000 #800000;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #CC0000;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #CC0000;
+  background-color: transparent;
   text-shadow: 0 1px 0 #555;
-  padding-right: 3px;
-  padding-left: 3px;
-  border-radius: 2px;
   opacity: 1;
-}
-.Cyborg .close:hover,
-.Cyborg .close:hover:hover,
-.Cyborg .close:focus,
-.Cyborg .close:hover:focus,
-.Cyborg .close:active,
-.Cyborg .close:hover:active,
-.Cyborg .close.active,
-.Cyborg .close:hover.active,
-.Cyborg .close.disabled,
-.Cyborg .close:hover.disabled,
-.Cyborg .close[disabled],
-.Cyborg .close:hover[disabled] {
-  color: #fff;
-  background-color: #CC0000;
-  *background-color: #b30000;
-}
-.Cyborg .close:active,
-.Cyborg .close:hover:active,
-.Cyborg .close.active,
-.Cyborg .close:hover.active {
-  background-color: #990000 \9;
 }
 .Cyborg .nav-tabs > .active > a {
   color: #ffffff;
@@ -246,25 +217,35 @@
 .Cyborg .octoprint-container .accordion-heading .accordion-heading-button a {
   color: #ccc;
 }
-.Cyborg #files_wrapper .dropdown-menu li > a,
-.Cyborg #files_wrapper .dropdown-submenu > a {
-  color: #333 !important;
+.Cyborg .dropdown-menu {
+  color: #fff;
+  background-color: #060606;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#202020), to(#060606));
+  background-image: -webkit-radial-gradient(circle, #202020, #060606);
+  background-image: -moz-radial-gradient(circle, #202020, #060606);
+  background-image: -o-radial-gradient(circle, #202020, #060606);
+  background-repeat: no-repeat;
 }
-.Cyborg #files_wrapper .dropdown-menu li > a:hover,
-.Cyborg #files_wrapper .dropdown-submenu > a:hover {
+.Cyborg .dropdown-menu [class^="fa-"],
+.Cyborg .dropdown-menu [class*=" fa-"] {
+  color: #fff;
+}
+.Cyborg .dropdown-menu li > a {
+  color: #fff;
+}
+.Cyborg .dropdown-menu li > a:hover {
   color: #fff !important;
   background-color: #33B5E5;
   background-image: linear-gradient(to bottom, #08c, #0077b3);
 }
-.Cyborg #files_wrapper .dropdown-menu li > a [class^="fa-"],
-.Cyborg #files_wrapper .dropdown-submenu > a [class^="fa-"],
-.Cyborg #files_wrapper .dropdown-menu li > a [class*=" fa-"],
-.Cyborg #files_wrapper .dropdown-submenu > a [class*=" fa-"] {
-  color: #020202;
+.Cyborg .dropdown-menu li > a:hover [class^="fa-"],
+.Cyborg .dropdown-menu li > a:hover [class*=" fa-"] {
+  color: #fff;
 }
-.Cyborg #files_wrapper [class^="fa-"],
-.Cyborg #files_wrapper [class*=" fa-"] {
-  color: #e6e6e6;
+.Cyborg .nav .dropdown-toggle:hover .caret,
+.Cyborg .nav .dropdown-toggle:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 .Cyborg .navbar-fixed-top .navbar-inner,
 .Cyborg .navbar-static-top .navbar-inner {

@@ -2,7 +2,7 @@
 @import "cyborg_variables.less";
 
 .Cyborg {
-
+	
 	body {
 		min-height: 100%;
 		color: @gray;
@@ -21,14 +21,18 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: @gray;
 	}
-	.modal,
+	.modal {
+		color: @gray;
+		#gradient > .radial(lighten(@bodyBackground, 10%), @bodyBackground);
+	}
 	.modal-footer {
 		color: @gray;
 		background-color: @dropdownBackground;
 	}
 	
 	.modal-header {
-		color: @blueDark;
+		color: @gray;
+		background-color: @dropdownBackground;
 	}
 	
 	.hero-unit {
@@ -46,12 +50,9 @@
 
 	.close,
 	.close:hover {
-		color: @white;
-		.buttonBackground(lighten(@red, 10%), @red);
+		color: @red;
+		background-color: transparent;
 		text-shadow: 0 1px 0 #555;
-		padding-right: 3px;
-		padding-left: 3px;
-		border-radius: 2px;
 		opacity: 1;
 	}
 
@@ -161,24 +162,32 @@
 	.octoprint-container .accordion-heading .accordion-heading-button a {
 		color: @almostNotWhite;
 	}
-
-	#files_wrapper {
-		.dropdown-menu li>a, .dropdown-submenu>a {
-			color: @fileMenuText !important;
-			&:hover {
-				color: @white !important;
-				background-color: @blue;
-				background-image: linear-gradient(to bottom,#08c,#0077b3);
-			}
-			[class^="fa-"],
-			[class*=" fa-"] {
-				color: @grayDarker;
-			}
-		}
+	
+	.dropdown-menu{
+		color: @white;
+		#gradient > .radial(lighten(@bodyBackground, 10%), @bodyBackground);
 		[class^="fa-"],
 		[class*=" fa-"] {
-			color: lighten(@almostNotWhite, 10%);
+			color: @white;
 		}
+		& li>a {
+			color: @white;
+		}
+		& li>a:hover {
+			color: @white !important;
+			background-color: @blue;
+			background-image: linear-gradient(to bottom,#08c,#0077b3);
+			[class^="fa-"],
+			[class*=" fa-"] {
+				color: @white;
+			}
+		}
+	}
+
+	.nav .dropdown-toggle:hover .caret,
+	.nav .dropdown-toggle:focus .caret {
+		border-top-color: @white;
+		border-bottom-color: @white;
 	}
 	
 	.navbar-fixed-top .navbar-inner, 
@@ -395,5 +404,5 @@
 		[class^="fa-video-camera"] {
 			color: @blue;
 		}
-	}
+	}	
 }

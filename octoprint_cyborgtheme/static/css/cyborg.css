@@ -46,14 +46,6 @@
 .Cyborg span .caret {
   color: red !important;
 }
-.Cyborg h1,
-.Cyborg h2,
-.Cyborg h3,
-.Cyborg h4,
-.Cyborg h5,
-.Cyborg h6 {
-  color: #999;
-}
 .Cyborg .modal {
   color: #999;
   background-color: #060606;
@@ -62,6 +54,14 @@
   background-image: -moz-radial-gradient(circle, #202020, #060606);
   background-image: -o-radial-gradient(circle, #202020, #060606);
   background-repeat: no-repeat;
+}
+.Cyborg .modal h1,
+.Cyborg .modal h2,
+.Cyborg .modal h3,
+.Cyborg .modal h4,
+.Cyborg .modal h5,
+.Cyborg .modal h6 {
+  color: #33B5E5;
 }
 .Cyborg .modal-footer {
   color: #999;
@@ -618,6 +618,14 @@
   padding: 10px;
   background-color: white;
 }
+.Cyborg #settings_dialog .modal-header h1,
+.Cyborg #settings_dialog .modal-header h2,
+.Cyborg #settings_dialog .modal-header h3,
+.Cyborg #settings_dialog .modal-header h4,
+.Cyborg #settings_dialog .modal-header h5,
+.Cyborg #settings_dialog .modal-header h6 {
+  color: #33B5E5;
+}
 .Cyborg #settings_dialog h1,
 .Cyborg #settings_dialog h2,
 .Cyborg #settings_dialog h3,
@@ -666,6 +674,26 @@
 .Cyborg #settings_dialog [class^="icon-trash"],
 .Cyborg #settings_dialog [class^="fa-trash"] {
   color: #CC0000;
+}
+.Cyborg #wizard_dialog h1,
+.Cyborg #wizard_dialog h2,
+.Cyborg #wizard_dialog h3,
+.Cyborg #wizard_dialog h4,
+.Cyborg #wizard_dialog h5,
+.Cyborg #wizard_dialog h6 {
+  color: #999;
+}
+.Cyborg #wizard_dialog .modal-header h1,
+.Cyborg #wizard_dialog .modal-header h2,
+.Cyborg #wizard_dialog .modal-header h3,
+.Cyborg #wizard_dialog .modal-header h4,
+.Cyborg #wizard_dialog .modal-header h5,
+.Cyborg #wizard_dialog .modal-header h6 {
+  color: #33B5E5;
+}
+.Cyborg #wizard_dialog .modal-header [class^="fa-magic"],
+.Cyborg #wizard_dialog .modal-header [class*=" fa-magic"] {
+  color: #ffbe00;
 }
 .Cyborg .timelapse_files_action [class*=" fa-trash"],
 .Cyborg .timelapse_unrendered_action [class*=" fa-trash"],

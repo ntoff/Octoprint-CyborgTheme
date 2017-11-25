@@ -18,12 +18,13 @@
 	span .caret {
 		color: red !important;
 	}
-	h1, h2, h3, h4, h5, h6 {
-		color: @gray;
-	}
+	
 	.modal {
 		color: @gray;
 		#gradient > .radial(lighten(@bodyBackground, 10%), @bodyBackground);
+		h1, h2, h3, h4, h5, h6 {
+			color: @blue;
+		}
 	}
 	.modal-footer {
 		color: @gray;
@@ -339,7 +340,11 @@
 	}
 	
 	#settings_dialog {
-		
+		& .modal-header {
+			h1, h2, h3, h4, h5, h6 {
+				color: @blue;
+			}
+		}
 		h1, h2, h3, h4, h5, h6 {
 			color: @gray;
 		}
@@ -386,6 +391,21 @@
 		[class^="icon-trash"],
 		[class^="fa-trash"] {
 			color: @red;
+		}
+	}
+
+	#wizard_dialog {
+		h1, h2, h3, h4, h5, h6 {
+			color: @gray;
+		}
+		.modal-header {
+			h1, h2, h3, h4, h5, h6 {
+				color: @blue;
+			}
+			[class^="fa-magic"],
+			[class*=" fa-magic"], { 
+				color: #ffbe00;
+			}
 		}
 	}
 
